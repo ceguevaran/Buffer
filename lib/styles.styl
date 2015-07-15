@@ -1,0 +1,107 @@
+@import "nib"
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
+@import "fonts/styles.styl"
+
+color-blanco-A = rgba(white,0.7)
+color-blanco-B = rgba(white,0.5)
+color-gris-A = #555555
+color-gris-B = #888888
+color-gris-C = #444444
+color-gris-D = #e5e5e5
+color-azul = #322de3
+color-verde = #6efbbe
+
+body
+	font-family Roboto
+	font-size 16px
+	margin 0
+	font-weight 300
+a
+	text-decoration none
+li
+	list-style none
+ul
+	margin 0
+	padding 0
+p
+	margin 0
+	padding 0
+
+@import "header/styles.styl"
+@import "layout/styles.styl"
+
+.Footer
+	&-social
+		background-color black
+	&-nav
+		display table
+		width 100%
+		padding-top 4em
+		padding-bottom 2.5em
+	&-logo
+		display table-cell
+		width 25%
+		height 40px
+		> img
+			width 168px
+			height 40px
+	&-title
+		display table-cell
+		width 75%
+		color color-gris-B
+		text-transform uppercase
+		font-size 2.8em
+		font-weight 300
+		padding 0
+		margin 0
+	&-sn
+		padding 0
+		margin 0 
+		height 22.5em
+		display table
+		width 100%
+		justify-content space-around
+		align-items stretch
+		border-bottom 2px solid transparent
+		> li 
+			border 2px solid color-gris-C
+			display table-cell
+			width 25%
+			height 100%
+			vertical-align middle
+		> li > a
+			text-align center
+			color white
+			display block
+			> aside
+				font-size 20px
+				font-weight 100
+				text-transform uppercase
+	&-sitemap
+		display table
+		width 100%
+		padding-bottom 1em
+		border-bottom 2px solid color-gris-D
+		> ul
+			display table-cell
+			width 25%
+			>li > a
+				display block
+				font-weight 300
+				color color-gris-A
+				padding-bottom .88em
+	&-credits
+		> p
+			display inline-block
+			color color-gris-A
+			font-size .8em
+			padding-bottom 1.2em
+			padding-top 1.3em
+
+.Wraper
+	width 1002px
+	margin 0 auto
+			
+		
+
+					
