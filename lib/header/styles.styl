@@ -6,9 +6,16 @@
 		> video
 			width 100%
 			height auto
+	&-button
+		color white
+		text-align end
+		font-size 2em
+		padding .5em 1em .5em 0
 	&-nav
 		display flex
-		position absolute
+		position fixed
+		background-color black
+		z-index 500
 		top 0
 		width 100vw
 		justify-content space-between
@@ -20,7 +27,7 @@
 			width 168px
 			height 40px
 	&-menu
-		display flex
+		display block
 		margin 0
 		> li
 			list-style none
@@ -31,11 +38,12 @@
 				margin 0 1em 0 1em
 				border-bottom: 4px solid transparent
 				&:hover
+				&:visited
 					color white
 					border-bottom: 4px solid white
 	&-title
 		font-weight 100
-		width 1002px
+		width 100vw
 		text-transform uppercase
 		text-align center
 		font-size 3.125em
@@ -63,3 +71,37 @@
 			width 100%
 			> aside
 				font-size 30px
+				
+@media(max-width 580px)
+	.Header
+		&-isHidden
+			display none
+		&-nav
+			> nav
+				position absolute
+				width 100vw
+				left 0
+				right 0
+				overflow hidden
+				background-color black
+				z-index -1
+@media(min-width 580px)
+	.Header
+		&-button
+			display none
+		&-menu
+			display flex
+			margin 0
+			> li
+				list-style none
+				> a 
+					display block
+					color color-blanco-B
+					padding 1em 0 1.2em 0
+					margin 0 1em 0 1em
+					border-bottom: 4px solid transparent
+					&:hover
+					&:visited
+						color white
+						border-bottom: 4px solid white
+			
