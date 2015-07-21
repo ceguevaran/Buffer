@@ -1,5 +1,6 @@
 .Header
 	position relative
+	font-size 0px
 	&-video
 		width 100%
 		> video
@@ -9,17 +10,18 @@
 		display flex
 		position absolute
 		top 0
+		width 100vw
+		justify-content space-between
 	&-logo
 		width 168px
 		height 40px
-		padding-top 1.15em
+		padding 1.15em 0 1.15em 1em
 		> img
 			width 168px
 			height 40px
 	&-menu
 		display flex
 		margin 0
-		margin-left 21em
 		> li
 			list-style none
 			> a 
@@ -32,14 +34,6 @@
 					color white
 					border-bottom: 4px solid white
 	&-title
-		// font-weight 100
-		// text-transform uppercase
-		// text-align center
-		// font-size 3.125em
-		// color white
-		// position absolute
-		// top 40%
-		// margin 0
 		font-weight 100
 		width 1002px
 		text-transform uppercase
@@ -54,6 +48,7 @@
 		margin auto
 		height 20%		
 	&-layout
+		font-size 16px
 		> a 
 			text-transform uppercase
 			font-size 1.125em
