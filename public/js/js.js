@@ -4,4 +4,7 @@ $( document ).ready(function() {
     $(".Header-button").click(function(){
     	$(".Header-menu").toggleClass("Header-isHidden");
     })
+    $(".Header-menu>li>a").click(function(){
+    	$(".Header-menu").toggleClass("Header-isHidden");
+    })
 });
