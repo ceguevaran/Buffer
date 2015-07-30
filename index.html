@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="public/css/styles.css">
   </head>
   <body>
-    <section class="Header">
+    <section id="Header" class="Header">
       <div class="Header-layout">
         <div class="Header-video">
           <video autoplay loop>
@@ -15,9 +15,9 @@
             <source src="public/videos/video1.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="Header-nav"><a href="#" target="_blank" class="Header-logo"><img src="public/images/buffer_logo.png" alt="Buffer"></a>
+        <div class="Header-nav"><a href="#Header" class="Header-logo"><img src="public/images/buffer_logo.png" alt="Buffer"></a>
           <nav>
-            <div class="Header-button">&#9776</div>
+            <div id="Header-button"><span></span><span></span><span></span><span></span></div>
             <ul class="Header-menu">
               <li><a href="#Layout">Proyectos</a></li>
               <li><a href="#">Nosotros</a></li>
@@ -25,11 +25,11 @@
             </ul>
           </nav>
         </div>
-        <h2 class="Header-title">Escuchamos música, bocetamos, jugamos con nuestros perros y terminamos proyectos</h2><a href="#">Empecemos 
+        <h2 class="Header-title">Escuchamos música, bocetamos,</br> jugamos con nuestros perros</br> y terminamos proyectos</h2><a href="#Layout">Empecemos 
           <aside class="icon-down"></aside></a>
       </div>
     </section>
-    <section id="Layout" class="Layout">
+    <section id="Layout" class="Layout anchor">
       <div class="Layout-proyectos">
         <article class="Layout-item"><a href="#"><img src="public/images/buffer_lf.jpg" alt="Liceo Francés">
             <div class="Layout-mask">
@@ -71,19 +71,16 @@
     </section>
     <section class="Footer">
       <div class="Footer-social">
-        <ul class="Footer-sn ">
-          <li><a target="black" href="http://www.behance.net/bufferstudio">
-              <aside class="icon-behance"></aside></a></li>
-          <li><a target="black" href="http://www.facebook.com/bufferdesignstudio">
-              <aside class="icon-facebook"></aside></a></li>
-          <li><a target="black" href="http://instagram.com/bufferstudio">
-              <aside class="icon-instagram"></aside></a></li>
-          <li><a target="black" href="">
-              <aside class="icon-linkedin"></aside></a></li>
+        <ul class="Footer-sn Wraper">
+          <li><a target="black" href="http://www.behance.net/bufferstudio"><span class="icon-behance"></span></a></li>
+          <li><a target="black" href="http://www.facebook.com/bufferdesignstudio"><span class="icon-facebook"></span></a></li>
+          <li><a target="black" href="http://instagram.com/bufferstudio"><span class="icon-instagram"></span></a></li>
+          <li><a target="black" href=""><span class="icon-linkedin"></span></a></li>
         </ul>
       </div>
-      <div class="Footer-credits ">
+      <div class="Footer-credits Wraper">
         <p>© 2015 SAGE Multipurpose Theme. Made by idealUI</p>
+        <p>© 2015 buffer studio - Todos los derechos reservados</p>
       </div>
     </section>
   </body>

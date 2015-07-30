@@ -1,14 +1,18 @@
-section(class="Header")
+section(class="Header" id="Header")
 	div(class="Header-layout")
 		div(class="Header-video")
 			video(autoplay loop)
 				source(src="public/videos/polina.webm" type="video/webm")
 				source(src="public/videos/video1.mp4" type="video/mp4")
 		div(class="Header-nav")
-			a(href="#", target="_blank", class="Header-logo")
+			a(href="#Header" class="Header-logo")
 				img(src="public/images/buffer_logo.png", alt="Buffer")
 			nav
-				div(class="Header-button") &#9776
+				div(id="Header-button")
+					span
+					span
+					span
+					span
 				ul(class="Header-menu")
 					li
 						a(href="#Layout") Proyectos
@@ -16,6 +20,6 @@ section(class="Header")
 						a(href="#") Nosotros
 					li
 						a(href="#") Contacto
-		h2(class="Header-title") Escuchamos música, bocetamos, jugamos con nuestros perros y terminamos proyectos
-		a(href="#") Empecemos 
+		h2(class="Header-title") Escuchamos música, bocetamos,</br> jugamos con nuestros perros</br> y terminamos proyectos
+		a(href="#Layout") Empecemos 
 			aside(class="icon-down")
