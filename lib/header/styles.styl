@@ -1,12 +1,15 @@
 .Header
 	position relative
-	margin-top 50px
 	&-video
 		width 100%
+		height 100vh
+		overflow hidden
 		> video
 			width 100%
-			height auto
+			min-height 100%
+			object-fit cover
 	&-nav
+		font-size 16px
 		display flex
 		position fixed
 		background-color color-gris-E
@@ -40,7 +43,7 @@
 		width 100vw
 		text-transform uppercase
 		text-align center
-		font-size 2.8em
+		font-size 44px
 		color white
 		position absolute
 		top 0
@@ -50,10 +53,10 @@
 		margin auto
 		height 20%		
 	&-layout
-		font-size 16px
+		font-size 0px
 		> a 
 			text-transform uppercase
-			font-size 1.125em
+			font-size 18px
 			text-align center
 			color color-blanco-A
 			position absolute
@@ -62,9 +65,16 @@
 			margin-right: auto;
 			left:0;
 			right:0;
-			width 100%
+			width 200px
+			transition color .25s
 			> aside
 				font-size 30px
+				transition .25s
+			&:hover
+				color white
+				> aside 
+					transform translate(0px,10px) scale(1.2)
+					color white
 
 #Header-button{
   width: 20px;
@@ -149,6 +159,7 @@
 				list-style none
 				> a 
 					display block
+					transition color .3s, border-bottom .6s
 					color color-blanco-B
 					padding 10px 0 10px 0
 					margin 0 16px 0 16px
@@ -158,7 +169,12 @@
 						color white
 						border-bottom: 4px solid white
 		&-nav
+			transition background-color .5s
+			background-color transparent
 			> nav
 				margin-right 16px
+		&-background
+			transition background-color .5s
+			background-color color-gris-E
 	#Header-button
 		display none

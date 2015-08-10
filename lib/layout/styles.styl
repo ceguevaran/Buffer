@@ -25,21 +25,6 @@
 	&-nav
 		display flex
 		align-items center
-	&-menu
-		display flex
-		text-transform uppercase
-		margin-left 16em
-		> li > a
-			display block
-			color color-gris-A
-			padding 1em 0 .4em 0
-			margin 0 1em 0 1em
-			border-bottom: 4px solid transparent
-			&:hover
-				color color-azul
-				border-bottom: 4px solid color-azul
-			&:active
-				color color-azul
 	&-mask
 		background-color black
 		font-size 16px
@@ -49,19 +34,26 @@
 		left 0
 		width 100%
 		height 100%
+		transition opacity .2s
 		&:hover
 			opacity .85
-			.Layout-description
-				opacity 1
-	// &-description
-	// 	margin 0
-	// 	color color-verde
-	// 	opacity 0
-	// 	position absolute
-	// 	bottom 12%
-	// 	left 8%
-	// 	font-size 3.75em
-	// 	font-weight 300
+	&-description
+		margin 0
+		color color-verde
+		position absolute
+		bottom 100px
+		left 8%
+		font-size 3.75em
+		font-weight 300
+		text-transform uppercase
+	&-paragraph
+		margin 0
+		color color-verde
+		position absolute
+		left 8%
+		bottom 40px
+		width 60%
+		font-weight 300
 @media(max-width 580px)
 	.Layout
 		&-item
