@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-	// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-	// 	document.querySelector("video").style.display="none";
-	// }
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		document.querySelector("video").style.display="none";
+	}
     $('.Header-menu>li>a').on('click', function(e) {
         e.preventDefault();
         var $link = $(this);
